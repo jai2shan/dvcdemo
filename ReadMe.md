@@ -58,4 +58,15 @@
 17) Running Logistic Regression
 > python -m training
 
-18) 
+18) Adding model to dvc
+> dvc add model
+
+19) updating model and git ignore files
+> git add .gitignore model.dvc
+
+20) Modify model to RandomForest
+> Change config file
+
+21) Training the model again
+> python -m training
+
