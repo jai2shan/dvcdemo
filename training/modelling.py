@@ -1,5 +1,6 @@
 from sklearn.metrics import *
 import pandas as pd
+import pickle
 
 
 class ourModel:
@@ -13,6 +14,9 @@ class ourModel:
     
     def fitModel(self):
         self.fit_model = self.model.fit(self.x, self.y)
+        filename = 'model/model.sav'
+        pickle.dump(self.model,  open(filename, 'wb'))
+
         y_pred = self.fit_model.predict(self.x)
         tn, fp, fn, tp = confusion_matrix(self.y, y_pred).ravel()
 

@@ -1,10 +1,11 @@
-from dataPreparation import *
-from modelling import *
+from training.dataPreparation import *
+from training.modelling import *
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 import yaml
 import json
 import numpy as np
+
 
 def load_config(config_name):
     with open(config_name) as file:
