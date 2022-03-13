@@ -70,3 +70,7 @@
 21) Training the model again
 > python -m training
 
+22) Add new model to DVC
+> dvc add model         
+> git add .     
+> git commit -m "Random Forest V1 Data"
