@@ -1,0 +1,6 @@
+data_directory: data/train.csv
+# model_name : Random Forest
+# model : RandomForestClassifier
+
+model_name : Logistic Regression
+model : LogisticRegression
